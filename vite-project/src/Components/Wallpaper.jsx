@@ -1,9 +1,10 @@
 import React from 'react';
+import bg from '../assets/wallpaper.jpg';
 
-function Wallpaper({ image }) {
+function Wallpaper() {
   return (
     <div style={{
-      backgroundImage: `url(${image})`,
+      backgroundImage: `url(${bg})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',

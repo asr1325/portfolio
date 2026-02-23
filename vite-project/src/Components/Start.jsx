@@ -1,16 +1,21 @@
 import React from 'react'
 
+import power from '../assets/power.png'
+import edge from '../assets/edge.png'
+import explorer from '../assets/explorer.png'
+import linkedin from '../assets/linkedin.png'
+import github from '../assets/github.svg.png'
+
 function redirectTo(url) 
 {
     window.open(url, '_blank');
 }
 
-
 const Start = () => {
   return (
     <div className="menu">
   <div className="zero">
-    <img src="src/assets/power.png" alt="Shutdown" className="logo" />
+    <img src={power} alt="Shutdown" className="logo" />
   </div>
 
 
@@ -18,12 +23,12 @@ const Start = () => {
     <div className="start-menu-list">
       
       <div className="start-menu-item">
-        <img src="src/assets/edge.png" alt="Browser" className="start-menu-icon" />
+        <img src={edge} alt="Browser" className="start-menu-icon" />
         <span className="start-menu-label">Edge</span>
       </div>
         <br />
         <div className="start-menu-item">
-        <img src="src/assets/explorer.png" alt="Explorer" className="start-menu-icon" />
+        <img src={explorer} alt="Explorer" className="start-menu-icon" />
         <span className="start-menu-label">Explorer</span>
       </div>
 
@@ -36,14 +41,14 @@ const Start = () => {
     <div
       className="menu-icons"
       onClick={() => redirectTo('https://www.linkedin.com/in/adityasrawat')}>
-      <img src="src/assets/linkedin.png" alt="LinkedIn" />
+      <img src={linkedin} alt="LinkedIn" />
       <p>LinkedIn</p>
     </div>
     <br /><br />
     <div
       className="menu-icons"
       onClick={() => redirectTo('https://www.github.com/asr1325')} >
-      <img src="src/assets/github.svg.png" alt="GitHub" />
+      <img src={github} alt="GitHub" />
       <p>GitHub</p>
     </div>
   </div>
