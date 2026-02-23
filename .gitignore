@@ -1,0 +1,39 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# editor folders
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# misc
+*.log
+coverage/
+
+# optional cache
+.cache/
+
+# vite specific
+.vite/
+
+# parcel (if ever used)
+.parcel-cache/
+
+# next build (if project changes later)
+.next/
+
+# temporary files
+tmp/
+temp/
+
+# vercel
+.vercel
